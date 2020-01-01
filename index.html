@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<link href="style.css" type="text/css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <title>SecureText</title>
+  </head>
+  <body>
+    <div id="buttons" align="center">
+    <a id="SecureText">SecureText</a>
+    <span id="time">00:00:00</span>
+<script type="text/javascript">
+setInterval(function () {
+date = new Date(),
+h = date.getHours(),
+m = date.getMinutes(),
+s = date.getSeconds(),
+h = (h < 10) ? '0' + h : h,
+m = (m < 10) ? '0' + m : m,
+s = (s < 10) ? '0' + s : s,
+document.getElementById('time').innerHTML = h + ':' + m + ':' + s;
+}, 1000);
+</script>
+    <a href="#" class="button1">Github</a>
+    <a href="#" class="button2">Download pre-Alpha</a>
+    <a href="https://vk.com/schlechterencoder" class="button3">VK</a>
+    <a href="#" class="button4">Telegram</a>
+    </div>
+  </body>
+</html>
